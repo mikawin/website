@@ -1,12 +1,8 @@
 .intro {
-    font-size: 4.5rem;
+    font-size: 4vw;
     font-weight: bold;
-    margin-top: 150px;
-    margin-bottom: 70px;
-}
-
-.container {
-    max-width: 100%
+    margin-top: 15vh;
+    margin-left: 5vw;
 }
 
 body::before {
@@ -21,41 +17,49 @@ body::before {
     clip-path: circle(50% at 50% calc(100% - 30px));
 }
 
+.contact-me-font {
+    font-size: 1.5vw;
+}
+
+.info-font {
+    font-size: 1.1vw;
+}
+
 .about-me-font {
-    font-size: 1.5rem;
+    font-size: 1.4vw;
 }
 
 .subtitle-container {
     width: 50vw;
-    margin: 0 auto;
-    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-top: 6vh;
 }
 
 .circular-image {
-    width: 250px;
-    height: 250px;
+    width: 15vw;
+    height: 30vh;
     border-radius: 50%;
     overflow: hidden;
     background-color: #fff;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 50%;
-    left: 95%;
+    top: 45vh;
+    left: 80vw;
     transform: translate(-50%, -50%);
 }
 
 .grad-image {
-    width: 400px;
-    height: 400px;
+    width: 22vw;
+    height: 44vh;
     border-radius: 50%;
     overflow: hidden;
     background-color: #fff;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 90%;
-    left: 88%;
+    top: 76vh;
+    left: 75vw;
     transform: translate(-50%, -50%);
 }
 
@@ -69,4 +73,73 @@ body::before {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.mobile-circular-image {
+    width: 44vw;
+    height: 22vh;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 75vh;
+    left: 70vw;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-grad-image {
+    width: 52vw;
+    height: 26vh;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 85vh;
+    left: 32vw;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-about-me-font {
+    font-size: 3.8vw;
+}
+
+.mobile-subtitle-container {
+    width: 84vw;
+    margin-left: 12vw;
+    margin-top: 3vh;
+}
+
+.mobile-intro {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+.mobile-grad-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-contact-me-container {
+    margin-left: 8vw;
+    margin-bottom: 5vh;
+}
+
+.mobile-contact-me-font {
+    font-size: 4vw;
+}
+
+.mobile-info-font {
+    font-size: 3vw;
 }
