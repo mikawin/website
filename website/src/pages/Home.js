@@ -14,8 +14,8 @@ function Home() {
                 <div className="mobile-view">
                     <div className='mobile-contact-me-container'>
                         <div className='mobile-contact-me-font'>Contact Me</div>
-                        <div className='mobile-info-font'>Email</div>
-                        <div className='mobile-info-font'>Phone Number</div>
+                        <div className='mobile-info-font'>mikayla.win@comcast.net</div>
+                        <div className='mobile-info-font'>925-858-3475</div>
                     </div>
                     <div className='mobile-intro'>
                         Hello! My name is Mikayla Win
@@ -51,13 +51,11 @@ function Home() {
                             realizing my excitement, I am currently working to find a job as an analyst.
                         </div>
                     </div>
-                    <div className='column'>
-                        {/* You can add content to this column if needed */}
-                    </div>
+                    <div className='column'></div>
                     <div className='column'>
                         <div className='contact-me-font'>Contact Me</div>
-                        <div className='info-font'>Email</div>
-                        <div className='info-font'>Phone Number</div>
+                        <div className='info-font'>mikayla.win@comcast.net</div>
+                        <div className='info-font'>925-858-3475</div>
                     </div>
                     <div className='circular-image bottom'>
                         <img src={me_image} alt="me" width="100%" />
