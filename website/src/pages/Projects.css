@@ -24,3 +24,13 @@
     margin-right: 2vw;
     margin-bottom: 5vw;
 }
+
+.dropdown {
+    text-align: right;
+
+}
+
+.button-color {
+    color: rgb(21, 142, 255);
+
+}

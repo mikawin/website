@@ -31,7 +31,7 @@ function NavBar() {
                 <div className="navbar-start">
                     <a className="navbar-item subtitle is-5"></a>
                     <a className="navbar-item subtitle is-5" onClick={() => navigate('/website')}>Home</a>
-                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/wesbite/experience')}>Experience</a>
+                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/website/experience')}>Experience</a>
                     <a className="navbar-item subtitle is-5" onClick={() => navigate('/website/projects')}>Projects</a>
                     <a className="navbar-item subtitle is-5" href='https://github.com/mikawin'>Github</a>
                     <a className="navbar-item subtitle is-5"></a>

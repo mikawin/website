@@ -4,7 +4,7 @@ import './Home.css';
 import 'bulma/css/bulma.min.css';
 import NavBar from '../components/navBar';
 import me_image from './me.jpg';
-import grad_image from './grad_pic.jpg';
+import grad_image from './grad_2.jpg';
 
 function Home() {
     return (
