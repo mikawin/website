@@ -1,0 +1,67 @@
+.name {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-top: 0vh;
+    color: #242424;
+}
+
+.contact-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8vh;
+    color: #004d7a;
+}
+
+.spacing {
+    margin-left: 3vw;
+}
+
+.programming-text {
+    margin-top: -1.1vh;
+}
+
+.text-space {
+    margin-top: 0.25vh
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #242424;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #4b4b4b;
+}
+
+.job-title {
+    margin-top: 4vh;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #242424;
+}
+
+.company {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #242424;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #4e4e4e
+}
+
+.job-description {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.bottom-spacing {
+    margin-bottom: 8vh;
+}
+
+.card-spacing {
+    margin-top: 8vh
+}
