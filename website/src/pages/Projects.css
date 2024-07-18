@@ -1,9 +1,8 @@
 .name-size {
-    font-size: 1.5vw;
+    font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 1vh;
     color: rgb(83, 85, 88);
-
 }
 
 @media screen and (min-width: 768px) {
@@ -28,7 +27,7 @@
     font-size: 5vw;
     font-weight: bold;
     margin-bottom: 1vh;
-    color: rgb(83, 85, 88);
+    color: #4b0a5d;
 
 }
 

@@ -9,7 +9,7 @@ import grad_image from './grad_2.jpg';
 function Home() {
 
     return (
-        <div>
+        <main className='background'>
             <NavBar />
             {isMobile ? (
                 <div className="mobile-view">
@@ -33,7 +33,7 @@ function Home() {
                     </div>
                 </div>
             ) : (
-                <body className='background'>
+                <div>
                     <div className="columns">
                         <div className='column is-two-thirds'>
                             <div className='intro'>
@@ -56,9 +56,9 @@ function Home() {
                             <img src={grad_image} alt="me" width="100%" />
                         </div>
                     </div>
-                </body>
+                </div>
             )}
-        </div>
+        </main>
     );
 }
 

@@ -87,7 +87,7 @@
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 74vh;
+    top: 62vh;
     left: 70vw;
     transform: translate(-50%, -50%);
 }
@@ -101,13 +101,13 @@
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 84vh;
+    top: 75vh;
     left: 33vw;
     transform: translate(-50%, -50%);
 }
 
 .mobile-about-me-font {
-    font-size: 3.8vw;
+    font-size: 4vw;
 }
 
 .mobile-subtitle-container {
@@ -117,9 +117,10 @@
 }
 
 .mobile-intro {
-    font-size: 6vw;
+    font-size: 6.2vw;
     font-weight: bold;
     margin-left: 5vw;
+    margin-top: 5vw;
 }
 
 .mobile-grad-image img {

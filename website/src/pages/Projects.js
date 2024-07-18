@@ -42,7 +42,7 @@ function Projects() {
     };
 
     return (
-        <div>
+        <main className='project-background'>
             <NavBar />
             {isMobile ? (
                 <div>
@@ -265,7 +265,7 @@ function Projects() {
 
                 </div>
             ) : (
-                <body className='project-background'>
+                <div>
                     <div className='columns centering'>
                         <div className='column'></div>
                         <div className='column is-one-quarter'>
@@ -499,9 +499,9 @@ function Projects() {
                         </div>
                         <div className='column'></div>
                     </div>
-                </body>
+                </div>
             )}
-        </div>
+        </main>
     );
 }
 

@@ -65,3 +65,69 @@
 .card-spacing {
     margin-top: 8vh
 }
+
+.mobile-name {
+    font-size: 3.75rem;
+    color: #242424;
+    margin-left: 5vw;
+    font-weight: bold;
+}
+
+.mobile-contact-info {
+    font-size: 1.2rem;
+    margin-left: 6vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    color: #004d7a;
+}
+
+.mobile-button-formatting {
+    margin-top: 1vh;
+}
+
+.mobile-formatting {
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+.mobile-paper-formatting {
+    margin: auto;
+    width: 80%;
+    border: 1.75vw;
+    padding: 1.75vw;
+}
+
+.mobile-job-title {
+    margin-top: 4vh;
+    font-size: 1.77rem;
+    font-weight: bold;
+    color: #242424;
+}
+
+.mobile-company {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #242424;
+}
+
+.vis-tools-text-space {
+    margin-left: 1.5vw;
+    font-size: 1.1rem;
+    color: #4b4b4b;
+}
+
+.tech-text-space {
+    margin-left: 0.15vw;
+    font-size: 1.1rem;
+    color: #4b4b4b;
+}
+
+.vis-tools-card-title {
+    font-size: 1.6rem;
+    margin-left: 1.4vw;
+}
+
+.tech-card-title {
+    font-size: 1.6rem;
+    margin-left: 2vw;
+}

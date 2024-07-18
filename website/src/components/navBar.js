@@ -30,12 +30,11 @@ function NavBar() {
             <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                 <div className="navbar-start">
                     <a className="navbar-item subtitle is-5"></a>
-                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/website')}>Home</a>
-                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/website/resume')}>Resume</a>
-                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/website/projects')}>Projects</a>
+                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/')}>Home</a>
+                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/resume')}>Resume</a>
+                    <a className="navbar-item subtitle is-5" onClick={() => navigate('/projects')}>Projects</a>
                     <a className="navbar-item subtitle is-5" href='https://github.com/mikawin'>Github</a>
                     <div className="navbar-item subtitle is-5"></div>
-
                 </div>
             </div>
         </nav>
