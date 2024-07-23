@@ -1,15 +1,40 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #444444;
+        --link-color: #004d7a;
+        --paper-bg-color: #f3faff;
+        --card-background-color: #f3faff;
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e0e0e0;
+        --link-color: #4c71a8;
+        --paper-bg-color: #315d8f;
+        --card-background-color: #315d8f;
+        --card-color: #1d1d1d;
+    }
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 .name {
     font-size: 6rem;
     font-weight: bold;
     margin-top: 0vh;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .contact-info {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8vh;
-    color: #004d7a;
+    color: var(--link-color);
 }
 
 .spacing {
@@ -21,41 +46,42 @@
 }
 
 .text-space {
-    margin-top: 0.25vh
+    margin-top: 0.25vh;
 }
 
 .card-title {
     font-size: 1.6rem;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .card-text {
     font-size: 1.1rem;
-    color: #4b4b4b;
+    color: var(--text-color);
 }
 
 .job-title {
     margin-top: 4vh;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .company {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .date {
     font-size: 1.2rem;
-    color: #4e4e4e
+    color: var(--text-color);
 }
 
 .job-description {
     font-size: 1.2rem;
     margin-top: 2vh;
     margin-bottom: 4vh;
+    color: var(--text-color)
 }
 
 .bottom-spacing {
@@ -63,13 +89,13 @@
 }
 
 .card-spacing {
-    margin-top: 8vh
+    margin-top: 8vh;
 }
 
 .mobile-name {
     font-size: 3.75rem;
-    color: #242424;
-    margin-left: 5vw;
+    color: var(--text-color);
+    margin-left: 3vw;
     font-weight: bold;
 }
 
@@ -78,7 +104,7 @@
     margin-left: 6vw;
     font-weight: bold;
     margin-bottom: 2vh;
-    color: #004d7a;
+    color: var(--link-color);
 }
 
 .mobile-button-formatting {
@@ -101,33 +127,35 @@
     margin-top: 4vh;
     font-size: 1.77rem;
     font-weight: bold;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .mobile-company {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #242424;
+    color: var(--text-color);
 }
 
 .vis-tools-text-space {
     margin-left: 1.5vw;
     font-size: 1.1rem;
-    color: #4b4b4b;
+    color: var(--text-color);
 }
 
 .tech-text-space {
     margin-left: 0.15vw;
     font-size: 1.1rem;
-    color: #4b4b4b;
+    color: var(--text-color);
 }
 
 .vis-tools-card-title {
     font-size: 1.6rem;
     margin-left: 1.4vw;
+    color: var(--text-color);
 }
 
 .tech-card-title {
     font-size: 1.6rem;
     margin-left: 2vw;
+    color: var(--text-color);
 }

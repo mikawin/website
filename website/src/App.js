@@ -1,21 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 
-
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="website" element={<Home />} />
-          <Route path="website/projects" element={<Projects />} />
-          <Route path="website/resume" element={<Resume />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
-      </BrowserRouter>
-    </div >
+      </HashRouter>
+    </div>
   );
 }
 

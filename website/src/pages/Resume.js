@@ -22,7 +22,7 @@ function Resume() {
                         <a className="button is-light mobile-button-formatting" href='https://drive.google.com/file/d/1rngZfOP1SU2DFDQJCgjHSrmFSWXq-sy2/view?usp=sharing'>Download PDF</a>
                     </div>
                     <Stack>
-                        <Paper elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--paper-bg-color)' }}>
                             <div className='mobile-paper-formatting'>
                                 <div className='mobile-job-title'>
                                     Data Migration Intern
@@ -44,7 +44,7 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper elevation={0}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--bg-color)' }}>
                             <div className='mobile-paper-formatting'>
                                 <div className='mobile-job-title'>
                                     Economics Peer Advisor
@@ -65,7 +65,7 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--paper-bg-color)' }}>
                             <div className='mobile-paper-formatting'>
                                 <div className='mobile-job-title'>
                                     Venue Manager
@@ -87,8 +87,8 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper>
-                            <Card className='column' elevation={0}>
+                        <Paper sx={{ backgroundColor: 'var(--card-color)' }}>
+                            <Card className='column' elevation={0} sx={{ backgroundColor: 'var(--card-color)' }}>
                                 <CardContent>
                                     <div className='card-title'>
                                         Programming Languages
@@ -105,8 +105,8 @@ function Resume() {
                             </Card>
                         </Paper>
 
-                        <Paper>
-                            <Card elevation={0} sx={{ backgroundColor: '#f3faff' }} >
+                        <Paper sx={{ backgroundColor: 'var(--card-color)' }}>
+                            <Card elevation={0} sx={{ backgroundColor: 'var(--card-background-color)' }} >
                                 <CardContent>
                                     <div className='tech-card-title'>
                                         Technologies
@@ -130,7 +130,7 @@ function Resume() {
                         </Paper>
 
                         <Paper>
-                            <Card elevation={0}>
+                            <Card elevation={0} sx={{ backgroundColor: 'var(--card-color)' }}>
                                 <CardContent>
                                     <div className='vis-tools-card-title'>
                                         Data Visualization Tools
@@ -173,7 +173,7 @@ function Resume() {
                     </div>
 
                     <Stack className='bottom-spacing'>
-                        <Paper elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--paper-bg-color)' }}>
                             <div className='columns'>
                                 <div className='column'></div>
                                 <div className='column is-two-thirds'>
@@ -199,7 +199,7 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper elevation={0}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--bg-color)' }}>
                             <div className='columns'>
                                 <div className='column'></div>
                                 <div className='column is-two-thirds'>
@@ -224,7 +224,7 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                        <Paper elevation={0} sx={{ backgroundColor: 'var(--paper-bg-color)' }}>
                             <div className='columns'>
                                 <div className='column'></div>
                                 <div className='column is-two-thirds'>
@@ -237,7 +237,7 @@ function Resume() {
                                     <div className='date'>
                                         June 2019 - August 2019
                                     </div>
-                                    <div className='job-description'>
+                                    <div className='job-description '>
                                         Handled over 50 customer inquiries involving oversseeing amentities such as concessions, handling
                                         complaints or problems quickly and efficeintly, and providing clear information about
                                         events including schedules and locations. Maintained the venue by ensuring that each field
@@ -250,10 +250,10 @@ function Resume() {
                             </div>
                         </Paper>
 
-                        <Paper elevation={0} className='card-spacing'>
+                        <Paper elevation={0} className='card-spacing' sx={{ backgroundColor: 'var(--bg-color)' }}>
                             <div className='columns'>
                                 <div className='column'></div>
-                                <Card className='column' elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                                <Card className='column' elevation={0} sx={{ backgroundColor: 'var(--card-background-color)' }}>
                                     <CardContent>
                                         <div className='card-title'>
                                             Programming Languages
@@ -268,7 +268,7 @@ function Resume() {
                                         </div>
                                     </CardContent>
                                 </Card>
-                                <Card className='column spacing' elevation={0} sx={{ backgroundColor: '#f3faff' }} >
+                                <Card className='column spacing' elevation={0} sx={{ backgroundColor: 'var(--card-background-color)' }} >
                                     <CardContent>
                                         <div className='card-title'>
                                             Technologies
@@ -289,7 +289,7 @@ function Resume() {
                                         </div>
                                     </CardContent>
                                 </Card>
-                                <Card className='column spacing' elevation={0} sx={{ backgroundColor: '#f3faff' }}>
+                                <Card className='column spacing' elevation={0} sx={{ backgroundColor: 'var(--card-background-color)' }}>
                                     <CardContent>
                                         <div className='card-title'>
                                             Data Visualization Tools

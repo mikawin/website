@@ -25,7 +25,7 @@ function Home() {
                         realizing my excitement, I am currently working to find a job as an analyst.
                     </div>
 
-                    <div className='mobile-circular-image  bottom'>
+                    <div className='mobile-circular-image bottom'>
                         <img src={me_image} alt="me" width="100%" />
                     </div>
                     <div className='mobile-grad-image'>
