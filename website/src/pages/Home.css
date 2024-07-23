@@ -20,19 +20,13 @@
     }
 }
 
-.contact-me-font {
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: var(--text-color);
-}
-
 .info-font {
     font-size: 1vw;
     color: var(--text-color);
 }
 
 .about-me-font {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     color: var(--text-color);
 }
 

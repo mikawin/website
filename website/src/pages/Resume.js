@@ -77,7 +77,7 @@ function Resume() {
                                     June 2019 - August 2019
                                 </div>
                                 <div className='job-description'>
-                                    Handled over 50 customer inquiries involving oversseeing amentities such as concessions, handling
+                                    Handled over 50 customer inquiries involving overseeing amentities such as concessions, handling
                                     complaints or problems quickly and efficeintly, and providing clear information about
                                     events including schedules and locations. Maintained the venue by ensuring that each field
                                     had the equipment necessary such that the tournament ran smoothly and remained on schedule.
@@ -238,7 +238,7 @@ function Resume() {
                                         June 2019 - August 2019
                                     </div>
                                     <div className='job-description '>
-                                        Handled over 50 customer inquiries involving oversseeing amentities such as concessions, handling
+                                        Handled over 50 customer inquiries involving overseeing amentities such as concessions, handling
                                         complaints or problems quickly and efficeintly, and providing clear information about
                                         events including schedules and locations. Maintained the venue by ensuring that each field
                                         had the equipment necessary such that the tournament ran smoothly and remained on schedule.
