@@ -271,11 +271,11 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>OnTime</div>
                                             {!expanded.p1 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     An indoor and outdoor navigation web app specific to the
                                                     University of California, Santa Cruz campus.
                                                 </div>}
@@ -292,7 +292,7 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p1} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     OnTime is a web application created using React.js and Material UI for formatting.
                                                     The indoor navigation is performed by querying our database from an Express.js server
                                                     to find the best path, using Dijkstra's pathfinding algorithm, based on coordinates
@@ -306,11 +306,11 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>Multi-Threaded HTTP Server</div>
                                             {!expanded.p3 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     A multi-threaded HTTP server with input sanitization, an audit log for atomic and
                                                     coherent GET and PUT requests, and more.
                                                 </div>}
@@ -327,7 +327,7 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p3} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     The robust multi-threaded HTTP server in focused on security and efficiency. Key
                                                     features includes POSIX regular expressions for input sanitization, efficient
                                                     connection management using dispatched threads and a user-defined thread worker pool
@@ -343,11 +343,11 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>Bird Watching App</div>
                                             {!expanded.p2 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     A web app that displays bird density heat maps, statistics
                                                     for specific regions, and data inputted per user.
                                                 </div>}
@@ -364,7 +364,7 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p2} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     The Bird Watching web application was created using Vue.js, Bulma CSS for formatting
                                                     and Py4Web as the database modeled after the website eBird.org. The app displays
                                                     bird densities, a checklist page for users to record personal sightings, a statistics
@@ -380,11 +380,11 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>Pocket Closet</div>
                                             {!expanded.p5 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     A prototype created while simulating the Lean Startup methodology
                                                     and based on the results of doing market research.
                                                 </div>}
@@ -401,7 +401,7 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p5} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     Pocket Closet is a prototype created using Figma. Pocket Closet
                                                     is an app that allows users to view their closet digitally, select outfits curated
                                                     by an AI model, and buy or sell clothing on the in-app storefront. Along with the
@@ -419,11 +419,11 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>RSA Encryption</div>
                                             {!expanded.p4 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     Three programs that encrypt and decrypt files using public
                                                     and private keys, and generate keys.
                                                 </div>}
@@ -440,7 +440,7 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p4} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     The RSA encryption project implemented the RSA cryptosystem for secure
                                                     communication. It begins with key generation, where a public key and a
                                                     private key are created using large prime numbers.
@@ -456,11 +456,11 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined">
+                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
                                         <CardContent>
                                             <div className='name-size'>Research Papers</div>
                                             {!expanded.p6 &&
-                                                <div>
+                                                <div className='description-text'>
                                                     Two research papers examining and proving causality using microeconomic
                                                     techniques like regression discontinuity, 2SLS, etc.
                                                 </div>}
@@ -480,12 +480,10 @@ function Projects() {
                                         </CardActions>
                                         <Collapse in={expanded.p6} timeout="auto" unmountOnExit>
                                             <CardContent>
-                                                <div>
+                                                <div className='description-text'>
                                                     Paper 1 compares two research designs: randomized control trial and
                                                     non-experimental research design. This paper displays how the results
-                                                    of non-experimental research design should be received skeptically.
-                                                </div>
-                                                <div>
+                                                    of non-experimental research design should be received skeptically. <br />
                                                     Paper 2 examines the effect of the Minimum Legal Drinking Age (MLDA) on the
                                                     proportion of th epopulation that drinks on the reduction of various crimes.
                                                     To display the causality of the MLDA, the paper discusses the results of

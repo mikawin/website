@@ -1,8 +1,27 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #444444;
+        --card-bg-color: #ffffff;
+        --button-color: #8347a8;
+        --description-text-color: #444444;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #adadad;
+        --card-bg-color: #584468;
+        --button-color: #d8b6ed;
+        --description-text-color: #adadad;
+    }
+}
+
+
 .name-size {
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 1vh;
-    color: rgb(83, 85, 88);
+    color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -37,13 +56,18 @@
     margin-bottom: 5vw;
 }
 
+.description-text {
+    color: var(--description-text-color);
+}
+
+
 .dropdown {
     text-align: right;
 
 }
 
 .button-color {
-    color: #8347a8;
+    color: var(--button-color);
     font-weight: bold;
 }
 
