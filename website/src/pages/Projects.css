@@ -2,18 +2,21 @@
     :root {
         --text-color: #444444;
         --card-bg-color: #ffffff;
-        --button-color: #8347a8;
+        --button-color: #4c315c;
         --description-text-color: #444444;
-        --hover-bg-color: #d4c1e0;
+        --hover-bg-color: #856896;
+        --hover-text-color: #ffffff;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-color: #adadad;
+        --text-color: #c0c0c0;
         --card-bg-color: #584468;
         --button-color: #d8b6ed;
         --description-text-color: #adadad;
+        --hover-bg-color: #e1d3e9;
+        --hover-text-color: #444444;
     }
 }
 
@@ -32,7 +35,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #b79ec552;
         z-index: -1;
         clip-path: polygon(50% 10%, 100% 100%, 0% 100%);
