@@ -27,17 +27,37 @@ const ExpandMore = styled((props) => {
 function Projects() {
     const [expanded, setExpanded] = React.useState({
         p1: false,
-        p4: false,
         p2: false,
-        p5: false,
         p3: false,
+        p4: false,
+        p5: false,
         p6: false,
     });
 
-    const handleExpandClick = (project) => {
+    const [permanentExpanded, setPermanentExpanded] = React.useState({
+        p1: false,
+        p2: false,
+        p3: false,
+        p4: false,
+        p5: false,
+        p6: false,
+    });
+
+    const handleExpandHover = (project, isHovered) => {
         setExpanded((prevExpanded) => ({
             ...prevExpanded,
-            [project]: !prevExpanded[project],
+            [project]: isHovered || permanentExpanded[project],
+        }));
+    };
+
+    const handleExpandClick = (project) => {
+        setPermanentExpanded((prevPermanentExpanded) => ({
+            ...prevPermanentExpanded,
+            [project]: !prevPermanentExpanded[project],
+        }));
+        setExpanded((prevExpanded) => ({
+            ...prevExpanded,
+            [project]: !permanentExpanded[project],
         }));
     };
 
@@ -60,7 +80,7 @@ function Projects() {
                                 <CardActions>
                                     <ExpandMore
                                         expand={expanded.p1}
-                                        onClick={() => handleExpandClick('p1')}
+                                        onClick={() => handleExpandHover('p1')}
                                         aria-expanded={expanded.p1}
                                         aria-label="show more"
                                     >
@@ -94,7 +114,7 @@ function Projects() {
                                 <CardActions>
                                     <ExpandMore
                                         expand={expanded.p3}
-                                        onClick={() => handleExpandClick('p3')}
+                                        onClick={() => handleExpandHover('p3')}
                                         aria-expanded={expanded.p3}
                                         aria-label="show more"
                                     >
@@ -127,7 +147,7 @@ function Projects() {
                                 <CardActions>
                                     <ExpandMore
                                         expand={expanded.p2}
-                                        onClick={() => handleExpandClick('p2')}
+                                        onClick={() => handleExpandHover('p2')}
                                         aria-expanded={expanded.p2}
                                         aria-label="show more"
                                     >
@@ -163,7 +183,7 @@ function Projects() {
                                 <CardActions>
                                     <ExpandMore
                                         expand={expanded.p5}
-                                        onClick={() => handleExpandClick('p5')}
+                                        onClick={() => handleExpandHover('p5')}
                                         aria-expanded={expanded.p5}
                                         aria-label="show more"
                                     >
@@ -198,7 +218,7 @@ function Projects() {
                                 <CardActions>
                                     <ExpandMore
                                         expand={expanded.p4}
-                                        onClick={() => handleExpandClick('p4')}
+                                        onClick={() => handleExpandHover('p4')}
                                         aria-expanded={expanded.p4}
                                         aria-label="show more"
                                     >
@@ -237,7 +257,7 @@ function Projects() {
                                     <a size="small" className="button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
                                     <ExpandMore
                                         expand={expanded.p6}
-                                        onClick={() => handleExpandClick('p6')}
+                                        onClick={() => handleExpandHover('p6')}
                                         aria-expanded={expanded.p6}
                                         aria-label="show more"
                                     >
@@ -271,7 +291,15 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p1 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p1', true)}
+                                        onMouseLeave={() => handleExpandHover('p1', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>OnTime</div>
                                             {!expanded.p1 &&
@@ -282,7 +310,6 @@ function Projects() {
                                         </CardContent>
                                         <CardActions>
                                             <ExpandMore
-                                                expand={expanded.p1}
                                                 onClick={() => handleExpandClick('p1')}
                                                 aria-expanded={expanded.p1}
                                                 aria-label="show more"
@@ -306,7 +333,15 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p3 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p3', true)}
+                                        onMouseLeave={() => handleExpandHover('p3', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>Multi-Threaded HTTP Server</div>
                                             {!expanded.p3 &&
@@ -317,7 +352,6 @@ function Projects() {
                                         </CardContent>
                                         <CardActions>
                                             <ExpandMore
-                                                expand={expanded.p3}
                                                 onClick={() => handleExpandClick('p3')}
                                                 aria-expanded={expanded.p3}
                                                 aria-label="show more"
@@ -343,7 +377,15 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p2 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p2', true)}
+                                        onMouseLeave={() => handleExpandHover('p2', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>Bird Watching App</div>
                                             {!expanded.p2 &&
@@ -354,7 +396,6 @@ function Projects() {
                                         </CardContent>
                                         <CardActions>
                                             <ExpandMore
-                                                expand={expanded.p2}
                                                 onClick={() => handleExpandClick('p2')}
                                                 aria-expanded={expanded.p2}
                                                 aria-label="show more"
@@ -380,7 +421,15 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p5 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p5', true)}
+                                        onMouseLeave={() => handleExpandHover('p5', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>Pocket Closet</div>
                                             {!expanded.p5 &&
@@ -391,7 +440,6 @@ function Projects() {
                                         </CardContent>
                                         <CardActions>
                                             <ExpandMore
-                                                expand={expanded.p5}
                                                 onClick={() => handleExpandClick('p5')}
                                                 aria-expanded={expanded.p5}
                                                 aria-label="show more"
@@ -419,7 +467,15 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p4 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p4', true)}
+                                        onMouseLeave={() => handleExpandHover('p4', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>RSA Encryption</div>
                                             {!expanded.p4 &&
@@ -430,7 +486,6 @@ function Projects() {
                                         </CardContent>
                                         <CardActions>
                                             <ExpandMore
-                                                expand={expanded.p4}
                                                 onClick={() => handleExpandClick('p4')}
                                                 aria-expanded={expanded.p4}
                                                 aria-label="show more"
@@ -456,7 +511,15 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <Card variant="outlined" sx={{ backgroundColor: 'var(--card-bg-color)' }}>
+                                    <Card
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: expanded.p6 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
+                                            transition: 'background-color 0.3s ease',
+                                        }}
+                                        onMouseEnter={() => handleExpandHover('p6', true)}
+                                        onMouseLeave={() => handleExpandHover('p6', false)}
+                                    >
                                         <CardContent>
                                             <div className='name-size'>Research Papers</div>
                                             {!expanded.p6 &&
@@ -469,7 +532,6 @@ function Projects() {
                                             <a size="small" className="button-color" href='https://drive.google.com/file/d/1XK7yovrTipIRox5dSI4kNJNMapN6PZLq/view?usp=sharing'>Paper 1</a>
                                             <a size="small" className="button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
                                             <ExpandMore
-                                                expand={expanded.p6}
                                                 onClick={() => handleExpandClick('p6')}
                                                 aria-expanded={expanded.p6}
                                                 aria-label="show more"
