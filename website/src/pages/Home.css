@@ -1,10 +1,22 @@
 .intro {
     font-size: 4vw;
-    font-weight: bold;
-    margin-top: 18vh;
-    margin-left: 5vw;
+    margin-top: 45vh;
+    margin-left: 26vw;
     color: var(--text-color);
 }
+
+.my-name {
+    margin-left: 17vw;
+    font-size: 7vw;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.background {
+    position: relative;
+    height: 225vh;
+}
+
 
 @media screen and (min-width: 768px) {
     .background::before {
@@ -16,7 +28,7 @@
         height: 100%;
         background: var(--background-overlay);
         z-index: -1;
-        clip-path: circle(50% at 50% calc(100% - 70px));
+        clip-path: circle(42% at 50% 50%);
     }
 }
 
@@ -26,41 +38,42 @@
 }
 
 .about-me-font {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     color: var(--text-color);
 }
 
 .subtitle-container {
     width: 50vw;
-    margin-left: 10vw;
-    margin-top: 6vh;
+    margin: auto;
+    margin-top: 50vh;
+    margin-bottom: 30vh;
 }
 
 .circular-image {
-    width: 15vw;
-    height: 30vh;
+    width: 17vw;
+    height: 34vh;
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--background-color);
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 40vh;
+    top: 72vh;
     left: 85vw;
     transform: translate(-50%, -50%);
 }
 
 .grad-image {
-    width: 22vw;
-    height: 44vh;
+    width: 25vw;
+    height: 50vh;
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--background-color);
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 70vh;
-    left: 78vw;
+    top: 37vh;
+    left: 75vw;
     transform: translate(-50%, -50%);
 }
 
@@ -142,10 +155,11 @@
     color: var(--text-color);
 }
 
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #333;
-        --background-overlay: rgba(105, 88, 31, 0.521);
+        --background-overlay: #5e784872;
         --text-color: #c0c0c0;
     }
 }
@@ -153,7 +167,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: #fff;
-        --background-overlay: rgba(255, 234, 165, 0.7);
-        --text-color: #444444;
+        --background-overlay: #b1cd9672;
+        --text-color: #2e2e2e;
     }
 }

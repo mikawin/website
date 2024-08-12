@@ -47,11 +47,16 @@
 }
 
 .mobile-name-size {
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
     margin-bottom: 1vh;
-    color: #4b0a5d;
+    color: #50185f;
 
+}
+
+.mobile-blurb {
+    font-weight: bold;
+    color: #595959;
 }
 
 .sides {

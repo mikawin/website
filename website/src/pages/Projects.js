@@ -17,6 +17,7 @@ const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
 })(({ theme, expand }) => ({
+    color: expand ? 'var(--hover-text-color)' : 'var(--text-color)',
     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
@@ -76,11 +77,10 @@ function Projects() {
                             <Card variant="outlined">
                                 <CardContent>
                                     <div className='mobile-name-size'>OnTime</div>
-                                    {!expanded.p1 &&
-                                        <div>
-                                            An indoor and outdoor navigation web app specific to the
-                                            University of California, Santa Cruz campus.
-                                        </div>}
+                                    <div className='mobile-blurb'>
+                                        An indoor and outdoor navigation web app specific to the
+                                        University of California, Santa Cruz campus.
+                                    </div>
                                 </CardContent>
                                 <CardActions>
                                     <ExpandMore
@@ -316,6 +316,7 @@ function Projects() {
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
+                                                    expand={expanded.p1}
                                                     onClick={() => handleExpandClick('p1')}
                                                     aria-expanded={expanded.p1}
                                                     aria-label="show more"
@@ -348,8 +349,6 @@ function Projects() {
                                                 backgroundColor: expanded.p3 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
                                                 transition: 'background-color 0.3s ease',
                                             }}
-                                            onMouseEnter={() => handleExpandHover('p3', true)}
-                                            onMouseLeave={() => handleExpandHover('p3', false)}
                                         >
                                             <CardContent>
                                                 <DescriptionText className='name-size' expanded={expanded.p3}>Multi-Threaded HTTP Server</DescriptionText>
@@ -361,6 +360,7 @@ function Projects() {
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
+                                                    expand={expanded.p3}
                                                     onClick={() => handleExpandClick('p3')}
                                                     aria-expanded={expanded.p3}
                                                     aria-label="show more"
@@ -395,8 +395,6 @@ function Projects() {
                                                 backgroundColor: expanded.p2 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
                                                 transition: 'background-color 0.3s ease',
                                             }}
-                                            onMouseEnter={() => handleExpandHover('p2', true)}
-                                            onMouseLeave={() => handleExpandHover('p2', false)}
                                         >
                                             <CardContent>
                                                 <DescriptionText className='name-size' expanded={expanded.p2}>Bird Watching App</DescriptionText>
@@ -408,6 +406,7 @@ function Projects() {
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
+                                                    expand={expanded.p2}
                                                     onClick={() => handleExpandClick('p2')}
                                                     aria-expanded={expanded.p2}
                                                     aria-label="show more"
@@ -442,7 +441,6 @@ function Projects() {
                                                 backgroundColor: expanded.p5 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
                                                 transition: 'background-color 0.3s ease',
                                             }}
-
                                         >
                                             <CardContent>
                                                 <DescriptionText className='name-size' expanded={expanded.p5}>Pocket Closet</DescriptionText>
@@ -454,6 +452,7 @@ function Projects() {
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
+                                                    expand={expanded.p5}
                                                     onClick={() => handleExpandClick('p5')}
                                                     aria-expanded={expanded.p5}
                                                     aria-label="show more"
@@ -502,6 +501,7 @@ function Projects() {
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
+                                                    expand={expanded.p4}
                                                     onClick={() => handleExpandClick('p4')}
                                                     aria-expanded={expanded.p4}
                                                     aria-label="show more"
@@ -549,6 +549,7 @@ function Projects() {
                                                 <a size="small" className="button-color" href='https://drive.google.com/file/d/1XK7yovrTipIRox5dSI4kNJNMapN6PZLq/view?usp=sharing'>Paper 1</a>
                                                 <a size="small" className="button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
                                                 <ExpandMore
+                                                    expand={expanded.p6}
                                                     onClick={() => handleExpandClick('p6')}
                                                     aria-expanded={expanded.p6}
                                                     aria-label="show more"
