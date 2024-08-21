@@ -1,0 +1,37 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --am-bg-color: #1d1d20;
+        --name-color: #3d527e;
+        --text-color: #c0c0c0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #f6eee3;
+        --text-color: #303030;
+        --name-color: #343f55;
+    }
+}
+
+.text-container {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.my-name {
+    font-size: 6vw;
+    color: var(--name-color);
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 2vw;
+    color: var(--text-color);
+}
+
+.about-me {
+    margin-top: 1.5vh;
+    font-size: 1.2vw;
+    color: var(--text-color);
+}
