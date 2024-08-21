@@ -3,7 +3,9 @@
         --text-color: #444444;
         --card-bg-color: #ffffff;
         --button-color: #4c315c;
+        --expanded-button-color: #e4d9eb;
         --description-text-color: #444444;
+        --technologies-text-color: #e0e0e0;
         --hover-bg-color: #856896;
         --hover-text-color: #ffffff;
     }
@@ -14,9 +16,11 @@
         --text-color: #c0c0c0;
         --card-bg-color: #584468;
         --button-color: #d8b6ed;
+        --expanded-button-color: #4c315c;
         --description-text-color: #adadad;
         --hover-bg-color: #e1d3e9;
         --hover-text-color: #444444;
+        --technologies-text-color: #444444;
     }
 }
 
@@ -26,6 +30,11 @@
     font-weight: bold;
     margin-bottom: 1vh;
     color: var(--text-color);
+}
+
+.project-background {
+    position: relative;
+    min-height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,6 +48,7 @@
         background: #b79ec552;
         z-index: -1;
         clip-path: polygon(50% 10%, 100% 100%, 0% 100%);
+        transition: height 0.3s ease-in-out;
     }
 }
 
@@ -69,6 +79,11 @@
     color: var(--description-text-color);
 }
 
+.technologies-text {
+    font-weight: bold;
+    color: var(--technologies-text-color);
+}
+
 
 .dropdown {
     text-align: right;
@@ -77,6 +92,11 @@
 
 .button-color {
     color: var(--button-color);
+    font-weight: bold;
+}
+
+.expanded-button-color {
+    color: var(--expanded-button-color);
     font-weight: bold;
 }
 

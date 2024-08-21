@@ -19,7 +19,7 @@ function Resume() {
                     <div className='mobile-contact-info'>
                         mikayla.win@comcast.net <br />
                         (925) 858-3475<br />
-                        <a className="button is-light mobile-button-formatting" href='https://drive.google.com/file/d/1rngZfOP1SU2DFDQJCgjHSrmFSWXq-sy2/view?usp=sharing'>Download PDF</a>
+                        <a className="button is-light mobile-button-formatting" href='https://drive.google.com/file/d/1zQ9BIL9_yRg46ywtmWP7ogi2wb87uZyx/view?usp=sharing'>Download PDF</a>
                     </div>
                     <Stack>
                         <Paper elevation={0} sx={{ backgroundColor: 'var(--paper-bg-color)' }}>
@@ -164,7 +164,7 @@ function Resume() {
                                 </div>
                                 <div className='column'>
                                     <div className=' button-formatting'>
-                                        <a className="button is-light is-medium" href='https://drive.google.com/file/d/1rngZfOP1SU2DFDQJCgjHSrmFSWXq-sy2/view?usp=sharing'>Download PDF</a>
+                                        <a className="button is-light is-medium" href='https://drive.google.com/file/d/1zQ9BIL9_yRg46ywtmWP7ogi2wb87uZyx/view?usp=sharing'>Download PDF</a>
                                     </div>
                                 </div>
                             </div>

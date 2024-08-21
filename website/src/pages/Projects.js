@@ -296,15 +296,13 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p1', true)}
-                                        onMouseLeave={() => handleExpandHover('p1', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
                                                 backgroundColor: expanded.p1 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
                                                 transition: 'background-color 0.3s ease',
                                             }}
-
                                         >
                                             <CardContent>
                                                 <DescriptionText className='name-size' expanded={expanded.p1}>OnTime</DescriptionText>
@@ -313,6 +311,11 @@ function Projects() {
                                                         An indoor and outdoor navigation web app specific to the
                                                         University of California, Santa Cruz campus.
                                                     </div>}
+                                                {expanded.p1 &&
+                                                    <div className='technologies-text'>
+                                                        Technologies : JavaScript, HTML/CSS, React, Material UI, Firebase, Figma, Python, Node.js, Express.js
+                                                    </div>
+                                                }
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
@@ -339,10 +342,8 @@ function Projects() {
                                         </Card>
                                     </div>
                                 </Paper>
-
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p3', true)}
-                                        onMouseLeave={() => handleExpandHover('p3', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
@@ -357,6 +358,11 @@ function Projects() {
                                                         A multi-threaded HTTP server with input sanitization, an audit log for atomic and
                                                         coherent GET and PUT requests, and more.
                                                     </div>}
+                                                {expanded.p3 &&
+                                                    <div className='technologies-text'>
+                                                        Technologies : C, LaTeX, POSIX
+                                                    </div>
+                                                }
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
@@ -387,8 +393,7 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p2', true)}
-                                        onMouseLeave={() => handleExpandHover('p2', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
@@ -403,6 +408,11 @@ function Projects() {
                                                         A web app that displays bird density heat maps, statistics
                                                         for specific regions, and data inputted per user.
                                                     </div>}
+                                                {expanded.p2 &&
+                                                    <div className='technologies-text'>
+                                                        Technologies : JavaScript, HTML/CSS, Vue.js, Bulma CSS, Py4Web
+                                                    </div>
+                                                }
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
@@ -433,8 +443,7 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p5', true)}
-                                        onMouseLeave={() => handleExpandHover('p5', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
@@ -449,6 +458,11 @@ function Projects() {
                                                         A prototype created while simulating the Lean Startup methodology
                                                         and based on the results of doing market research.
                                                     </div>}
+                                                {expanded.p5 &&
+                                                    <div className='technologies-text'>
+                                                        Technologies : Microsoft PowerPoint, Figma
+                                                    </div>
+                                                }
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
@@ -481,15 +495,13 @@ function Projects() {
                         <div className='column is-one-quarter'>
                             <Stack spacing={12}>
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p4', true)}
-                                        onMouseLeave={() => handleExpandHover('p4', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
                                                 backgroundColor: expanded.p4 ? 'var(--hover-bg-color)' : 'var(--card-bg-color)',
                                                 transition: 'background-color 0.3s ease',
                                             }}
-
                                         >
                                             <CardContent>
                                                 <DescriptionText className='name-size' expanded={expanded.p4}> RSA Encryption</DescriptionText>
@@ -498,6 +510,11 @@ function Projects() {
                                                         Three programs that encrypt and decrypt files using public
                                                         and private keys, and generate keys.
                                                     </div>}
+                                                {expanded.p4 &&
+                                                    <div className='technologies-text'>
+                                                        Technologies : C, LaTeX
+                                                    </div>
+                                                }
                                             </CardContent>
                                             <CardActions>
                                                 <ExpandMore
@@ -527,8 +544,7 @@ function Projects() {
                                 </Paper>
 
                                 <Paper>
-                                    <div onMouseEnter={() => handleExpandHover('p6', true)}
-                                        onMouseLeave={() => handleExpandHover('p6', false)}>
+                                    <div>
                                         <Card
                                             variant="outlined"
                                             sx={{
@@ -546,8 +562,20 @@ function Projects() {
                                                     </div>}
                                             </CardContent>
                                             <CardActions style={{ justifyContent: 'flex-end' }}>
-                                                <a size="small" className="button-color" href='https://drive.google.com/file/d/1XK7yovrTipIRox5dSI4kNJNMapN6PZLq/view?usp=sharing'>Paper 1</a>
-                                                <a size="small" className="button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
+                                                {!expanded.p6 ? (
+                                                    <div>
+                                                        <a size="small" className="button-color" href='https://drive.google.com/file/d/1XK7yovrTipIRox5dSI4kNJNMapN6PZLq/view?usp=sharing'>Paper 1  </a>
+                                                        <a size="small" className="button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
+                                                    </div>
+                                                )
+                                                    : (
+                                                        <div>
+                                                            <a size="small" className="expanded-button-color" href='https://drive.google.com/file/d/1XK7yovrTipIRox5dSI4kNJNMapN6PZLq/view?usp=sharing'>Paper 1  </a>
+                                                            <a size="small" className="expanded-button-color" href='https://drive.google.com/file/d/16Vxo-QvR-wG5OcZ1LNOqw_TbxGhTflmS/view?usp=sharing'>Paper 2</a>
+                                                        </div>
+                                                    )
+                                                }
+
                                                 <ExpandMore
                                                     expand={expanded.p6}
                                                     onClick={() => handleExpandClick('p6')}
