@@ -33,7 +33,6 @@ function NavBar() {
                     <a className="navbar-item subtitle is-5" onClick={() => navigate('/')}>Home</a>
                     <a className="navbar-item subtitle is-5" onClick={() => navigate('/resume')}>Resume</a>
                     <a className="navbar-item subtitle is-5" onClick={() => navigate('/projects')}>Projects</a>
-                    <a className="navbar-item subtitle is-5" href='https://github.com/mikawin'>Github</a>
                     <div className="navbar-item subtitle is-5"></div>
                 </div>
             </div>
