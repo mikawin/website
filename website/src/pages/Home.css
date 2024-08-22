@@ -8,7 +8,7 @@
         --background-color: #333;
         --background-overlay: #5e784872;
         --text-color: #c0c0c0;
-
+        --name-color: #39507a;
     }
 }
 
@@ -17,6 +17,7 @@
         --background-color: #f6eee3;
         --background-overlay: #b1cd9672;
         --text-color: #2e2e2e;
+        --name-color: #343f55;
     }
 }
 
@@ -25,10 +26,47 @@
 }
 
 .button-group-formatting {
-    margin-left: 23vw;
+    margin-left: 25vw;
 }
 
 .content-container {
     height: 80vh;
+    margin-bottom: 2vh;
+}
+
+.mobile-picture-formatting {
+    margin-left: 15vw;
+}
+
+.mobile-home-name {
+    font-size: 8vh;
+    color: var(--name-color);
+    font-weight: bold;
+
+}
+
+.mobile-intro {
+    font-size: 3.5vh;
+}
+
+
+.mobile-text-container {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.mobile-text {
+    font-size: 2.5vh;
+}
+
+.mobile-whats-new {
+    font-size: 6vh;
+    color: var(--name-color);
+}
+
+.mobile-icons {
+    text-align: end;
     margin-bottom: 2vh;
 }

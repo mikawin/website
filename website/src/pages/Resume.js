@@ -276,7 +276,7 @@ function Resume() {
                                         <div className='columns '>
                                             <div className='card-text column is-three-fifths text-space'>
                                                 Figma<br />
-                                                LaTex<br />
+                                                LaTeX<br />
                                                 Linux<br />
                                                 Microsoft Office Suite<br />
                                             </div>

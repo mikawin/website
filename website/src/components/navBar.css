@@ -2,6 +2,10 @@
     display: none;
 }
 
+.navbar-burger.burger {
+    color: var(--name-color);
+}
+
 @media (max-width: 1024px) {
     .navbar-burger {
         display: block;
@@ -13,5 +17,17 @@
 
     .navbar-menu.is-active {
         display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --name-color: #39507a;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --name-color: #343f55;
     }
 }

@@ -60,13 +60,12 @@
     font-size: 6vw;
     font-weight: bold;
     margin-bottom: 1vh;
-    color: #50185f;
-
+    color: var(--text-color);
 }
 
 .mobile-blurb {
-    font-weight: bold;
-    color: #595959;
+    color: var(--text-color);
+
 }
 
 .sides {
