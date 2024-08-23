@@ -297,7 +297,7 @@ function Projects() {
                                 <CardContent>
                                     <DescriptionText expanded={expanded.p6} className='mobile-name-size'>Research Papers</DescriptionText>
                                     {!expanded.p6 &&
-                                        <div>
+                                        <div div className='description-text'>
                                             Two research papers examining and proving causality using microeconomic
                                             techniques like regression discontinuity, 2SLS, etc.
                                         </div>}
