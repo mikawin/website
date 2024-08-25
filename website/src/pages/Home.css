@@ -21,8 +21,16 @@
     }
 }
 
+
 .picture-formatting {
     margin-left: 5vw;
+    z-index: 2;
+}
+
+.text {
+    position: relative;
+    overflow-y: auto;
+    z-index: 1;
 }
 
 .button-group-formatting {

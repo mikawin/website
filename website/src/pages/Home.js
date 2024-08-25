@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import { isMobile } from 'react-device-detect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -7,20 +7,19 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 import 'bulma/css/bulma.min.css';
 
-import NavBar from '../components/navBar';
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Button from '@mui/material/Button';
-
 import grad_image from './grad_2.jpg';
+import NavBar from '../components/navBar';
 import AboutMe from '../components/aboutMe';
 import CurrentWork from '../components/currentWork';
 import ContactMe from '../components/contactMe';
 
 function Home() {
-    const [selectedButton, setSelectedButton] = useState('one');
+    const aboutMeRef = useRef(null);
+    const currentWorkRef = useRef(null);
+    const contactMeRef = useRef(null);
 
-    const handleButtonClick = (button) => {
-        setSelectedButton(button);
+    const scrollToSection = (sectionRef) => {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -106,18 +105,11 @@ function Home() {
                     <div className='column is-two-fifths left-column'>
                         <img className="picture-formatting" src={grad_image} alt="me" width="72.5%" />
                     </div>
-                    <div className='column'>
+                    <div className='column text'>
                         <div className='content-container'>
-                            {selectedButton === 'one' && <AboutMe />}
-                            {selectedButton === 'two' && <CurrentWork />}
-                            {selectedButton === 'three' && <ContactMe />}
-                        </div>
-                        <div className='button-group-formatting'>
-                            <ButtonGroup variant="text" aria-label="Basic button group">
-                                <Button style={{ fontSize: '1vw' }} onClick={() => handleButtonClick('one')}>{'<'}</Button>
-                                <Button style={{ fontSize: '1vw' }} onClick={() => handleButtonClick('two')}>...</Button>
-                                <Button style={{ fontSize: '1vw' }} onClick={() => handleButtonClick('three')}>{'>'}</Button>
-                            </ButtonGroup>
+                            <div ref={aboutMeRef}><AboutMe /></div>
+                            <div ref={currentWorkRef}><CurrentWork /></div>
+                            <div ref={contactMeRef}><ContactMe /></div>
                         </div>
                     </div>
                 </div>
