@@ -4,15 +4,15 @@
 }
 
 .contact-me {
-    font-size: 7vw;
+    font-size: 5.5vw;
     color: var(--name-color);
     font-weight: bold;
     margin-bottom: 2vh;
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
 
 .icons {
-    margin-top: -12vh;
+    margin-top: -9vh;
     margin-left: 1vw;
 }
 
