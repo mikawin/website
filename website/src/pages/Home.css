@@ -31,6 +31,8 @@
     position: relative;
     overflow-y: auto;
     z-index: 1;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .button-group-formatting {

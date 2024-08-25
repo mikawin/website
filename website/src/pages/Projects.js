@@ -334,7 +334,7 @@ function Projects() {
                                         </DescriptionText>
                                         <DescriptionText expanded={expanded.p6}>
                                             Paper 2 examines the effect of the Minimum Legal Drinking Age (MLDA) on the
-                                            proportion of th epopulation that drinks on the reduction of various crimes.
+                                            proportion of the population that drinks on the reduction of various crimes.
                                             To display the causality of the MLDA, the paper discusses the results of
                                             a regression discontinuity model.
                                         </DescriptionText>
@@ -649,7 +649,7 @@ function Projects() {
                                                         non-experimental research design. This paper displays how the results
                                                         of non-experimental research design should be received skeptically. <br /><br />
                                                         Paper 2 examines the effect of the Minimum Legal Drinking Age (MLDA) on the
-                                                        proportion of th epopulation that drinks on the reduction of various crimes.
+                                                        proportion of the population that drinks on the reduction of various crimes.
                                                         To display the causality of the MLDA, the paper discusses the results of
                                                         a regression discontinuity model.
                                                     </DescriptionText>

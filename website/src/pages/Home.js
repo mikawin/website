@@ -14,13 +14,6 @@ import CurrentWork from '../components/currentWork';
 import ContactMe from '../components/contactMe';
 
 function Home() {
-    const aboutMeRef = useRef(null);
-    const currentWorkRef = useRef(null);
-    const contactMeRef = useRef(null);
-
-    const scrollToSection = (sectionRef) => {
-        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
 
     return (
         <main className='background'>
@@ -107,9 +100,9 @@ function Home() {
                     </div>
                     <div className='column text'>
                         <div className='content-container'>
-                            <div ref={aboutMeRef}><AboutMe /></div>
-                            <div ref={currentWorkRef}><CurrentWork /></div>
-                            <div ref={contactMeRef}><ContactMe /></div>
+                            <div><AboutMe /></div>
+                            <div><CurrentWork /></div>
+                            <div><ContactMe /></div>
                         </div>
                     </div>
                 </div>
