@@ -6,12 +6,12 @@
 
 .current-text {
     margin-top: 1.5vh;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
 
 .whats-new {
-    font-size: 5vw;
+    font-size: 5rem;
     color: var(--name-color);
     font-weight: bold;
     margin-bottom: 2vh;

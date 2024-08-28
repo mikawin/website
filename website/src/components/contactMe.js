@@ -22,7 +22,7 @@ function ContactMe() {
                                 >
                                     <FontAwesomeIcon
                                         icon={faLinkedinIn}
-                                        style={{ color: 'var(--name-color)', fontSize: '2.5vw' }}
+                                        style={{ color: 'var(--name-color)', fontSize: '2.5rem' }}
                                     />
                                 </a>
                                 <a
@@ -32,7 +32,7 @@ function ContactMe() {
                                 >
                                     <FontAwesomeIcon
                                         icon={faGithub}
-                                        style={{ color: 'var(--name-color)', fontSize: '2.5vw', marginLeft: '1vw' }}
+                                        style={{ color: 'var(--name-color)', fontSize: '2.5rem', marginLeft: '1vw' }}
                                     />
                                 </a>
                                 <a
@@ -42,7 +42,7 @@ function ContactMe() {
                                 >
                                     <FontAwesomeIcon
                                         icon={faEnvelope}
-                                        style={{ color: 'var(--name-color)', fontSize: '2.5vw', marginLeft: '1vw' }}
+                                        style={{ color: 'var(--name-color)', fontSize: '2.5rem', marginLeft: '1vw' }}
                                     />
                                 </a>
                             </div>

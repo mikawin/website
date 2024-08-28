@@ -20,18 +20,18 @@
 }
 
 .my-name {
-    font-size: 6vw;
+    font-size: 6rem;
     color: var(--name-color);
     font-weight: bold;
 }
 
 .intro {
-    font-size: 2vw;
+    font-size: 2rem;
     color: var(--text-color);
 }
 
 .about-me {
     margin-top: 1.5vh;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
